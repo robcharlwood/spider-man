@@ -1,0 +1,11 @@
+[tool.poetry]
+name = "spider-man"
+version = "0.0.0"
+description = "Python development tools"
+authors = ["Rob Charlwood"]
+
+[tool.poetry.dependencies]
+python = "3.8.2"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.7.1"
