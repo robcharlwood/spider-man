@@ -186,7 +186,7 @@ func TestCrawlCommand(t *testing.T) {
 				"--wait", "1s",
 				"--parallel", "1",
 			},
-			"golden/crawl-duration-flag.golden",
+			"golden/crawl-full-run.golden",
 		},
 	}
 
