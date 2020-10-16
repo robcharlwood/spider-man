@@ -59,3 +59,23 @@ setup_precommit: check_poetry
 
 install: setup setup_precommit
 .PHONY: install
+
+test:
+	go test -timeout 30s -short -v $(shell go list ./...  | grep -v /vendor/)
+.PHONY: test
+
+test_and_update_golden_fixtures:
+	go test -timeout 30s -short -v $(shell go list ./...  | grep -v /vendor/) -update
+.PHONY: test
+
+build-integration:
+	go build
+.PHONY: build-integration
+
+build_linux:
+	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags="-w -s" -o spider-man .
+.PHONY: build_linux
+
+build_macosx:
+	CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -ldflags="-w -s" -o spider-man .
+.PHONY: build_macosx
