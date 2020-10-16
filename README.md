@@ -134,8 +134,8 @@ see the [tags on this repository](https://github.com/robcharlwood/spider-man/tag
 
 ## Changes
 
-Please see the [CHANGELOG.md](https://github.com/robcharlwood/spider-man/blob/main/CHANGELOG.md) file additions, changes, deletions and fixes between each version
+Please see the [CHANGELOG.md](https://github.com/robcharlwood/spider-man/blob/main/CHANGELOG.md) file additions, changes, deletions and fixes between each version.
 
 ## License
 
-This project is licensed under the CC0-1.0 License - please see the [LICENSE.md](https://github.com/robcharlwood/spider-man/blob/main/LICENSE) file for details
+This project is licensed under the CC0-1.0 License - please see the [LICENSE.md](https://github.com/robcharlwood/spider-man/blob/main/LICENSE) file for details.
