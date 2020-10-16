@@ -1,0 +1,10 @@
+Error: The domain name provided is not valid!
+Usage:
+  spider-man crawl https://monzo.com [flags]
+
+Flags:
+  -d, --depth int       How deep to crawl
+  -h, --help            help for crawl
+  -p, --parallel int    How many parallel requests are made to the domain (default 5)
+  -w, --wait duration   How long to wait between requests (default 1s)
+
