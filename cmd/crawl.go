@@ -41,8 +41,8 @@ func init() {
 
 func includeCrawlFlags(cmd *cobra.Command) {
 	cmd.Flags().IntP("depth", "d", 0, "How deep to crawl")
-	cmd.Flags().IntP("parallel", "p", 5, "How many parallel requests are made to the domain - default 5")
-	cmd.Flags().DurationP("wait", "w", time.Second, "How long to wait between requests - default 1 second")
+	cmd.Flags().IntP("parallel", "p", 5, "How many parallel requests are made to the domain")
+	cmd.Flags().DurationP("wait", "w", time.Second, "How long to wait between requests")
 }
 
 func crawl(ccmd *cobra.Command, args []string) error {
