@@ -307,7 +307,7 @@ func printTable(location *url.URL, links []*url.URL) {
 		[]string{location.String(), strings.Join(stringLinks, "\n")},
 	}
 	table := tablewriter.NewWriter(tableString)
-	table.SetHeader([]string{"Page", "Discovered URLs"})
+	table.SetHeader([]string{"Crawled URL", "Discovered valid URLs"})
 	table.SetRowLine(true)
 	table.AppendBulk(data)
 	table.Render()
