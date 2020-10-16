@@ -11,5 +11,5 @@ install: true
 script:
   - go fmt
   - go vet
-  - go test -timeout 30s -short -v $(shell go list ./...  | grep -v /vendor/)
+  - go test -timeout 30s -short -v ./cmd/
   - go build
