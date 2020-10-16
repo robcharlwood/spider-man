@@ -1,0 +1,15 @@
+language: go
+go:
+  - 1.14.x
+  - 1.15.x
+os:
+  - linux
+  - osx
+dist: trusty
+sudo: false
+install: true
+script:
+  - go fmt
+  - go vet
+  - go test -timeout 30s -short -v $(shell go list ./...  | grep -v /vendor/)
+  - go build
