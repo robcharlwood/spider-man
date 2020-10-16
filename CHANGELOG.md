@@ -14,4 +14,10 @@ Types of changes are:
 * **Fixed** for any bug fixes.
 * **Security** in case of vulnerabilities.
 
-## Unreleased
+## 1.0.0 - 2020-10-16
+
+### Added
+* Initial web crawler CLI
+* Smoke integration tests
+* Travis integration
+* Commands for building for both Mac and Linux
